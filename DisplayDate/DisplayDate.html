@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>DisplayDate</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body onload="CT(), FixedDate()">
+        <header >
+            <h1>DisplayDate</h1>
+        </header>
+        <section>
+            <script>
+                function FixedDate(){
+                    document.getElementById('fixedtime').innerHTML=Date();
+                }
+                function CT(){
+                    document.getElementById('time').innerHTML=Date();
+                    refresh();
+                }
+                function refresh(){
+                    mytime = setTimeout('CT()',1000);
+                }
+            </script>
+            
+            <h2>Fixed Date and Time</h2>
+            <p id="fixedtime"></p>
+            <hr>
+            <h2>Changing Date and Time</h2>
+            <p id="time"></p>
+            <hr>
+        </section>
+        <footer>Copyright &#169 2021 DisplayDate | All rights reserved</footer>
+    </body>
+</html>
