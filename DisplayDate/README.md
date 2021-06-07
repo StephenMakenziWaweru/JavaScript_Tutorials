@@ -1,0 +1,1 @@
+This is a page displaying system date and time on load and the actual date and time at all times without refreshing.
